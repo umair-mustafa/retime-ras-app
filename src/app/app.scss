@@ -14,3 +14,128 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+
+// Custom Global CSS
+// -----------------------------------------------------
+
+/* =====================
+   Variables
+   ===================== */
+
+$skyblue:    #5bc0f5;
+$lightblue:  #216ff3;
+$dark-blue-btn: #2d4159;
+$disabled-dark-btn: #3369a7;
+$font-light: 100;
+
+/* =====================
+   Mixins
+   ===================== */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+
+
+/* =====================
+   Gradients
+   ===================== */
+  
+.gradient-bg{
+    background: $skyblue; /* Old browsers */
+    background: -moz-linear-gradient(top, $skyblue 0%, $lightblue 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $skyblue 0%,$lightblue 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $skyblue 0%,$lightblue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$skyblue', endColorstr='$lightblue',GradientType=0 ); /* IE6-9 */
+}
+
+
+/* =====================
+   Inputs
+   ===================== */
+
+.transparent-input{
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    @include border-radius(2px);
+}
+
+
+/* =====================
+   Buttons
+   ===================== */
+
+.custom-btn{
+    height: 4.6rem;
+    background: $dark-blue-btn;
+    @include border-radius(2px);
+}
+
+
+/* =====================
+   Generic
+   ===================== */
+.vc-align{
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .vc-align-inner{
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .login-section{
+        padding-bottom: 120px;
+
+        a{
+            color: #FFF;
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+    }
+    .bottom-logo{
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        
+        span.copyright-text{
+            display: block;
+            margin-top: 10px;
+            color: #FFF;
+            font-size: 10px;
+            font-weight: $font-light;
+        }
+    }
+}
+
+ion-img{
+    background: transparent;
+}
+ 
+  
+  
+/* =====================
+   Placeholders
+   ===================== */
+
+  .transparent-input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #EEEEEE;
+  }
+  .transparent-input input::-moz-placeholder { /* Firefox 19+ */
+    color: #EEEEEE;
+  }
+  .transparent-input input:-ms-input-placeholder { /* IE 10+ */
+    color: #EEEEEE;
+  }
+  .transparent-input input:-moz-placeholder { /* Firefox 18- */
+    color: #EEEEEE;
+  }
