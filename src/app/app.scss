@@ -53,11 +53,14 @@ $font-bold:     600;
    ===================== */
   
 .gradient-bg{
-    background: $skyblue; /* Old browsers */
-    background: -moz-linear-gradient(top, $skyblue 0%, $lightblue 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, $skyblue 0%,$lightblue 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, $skyblue 0%,$lightblue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$skyblue', endColorstr='$lightblue',GradientType=0 ); /* IE6-9 */
+
+    .scroll-content{
+        background: $skyblue; /* Old browsers */
+        background: -moz-linear-gradient(top, $skyblue 0%, $lightblue 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, $skyblue 0%,$lightblue 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, $skyblue 0%,$lightblue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$skyblue', endColorstr='$lightblue',GradientType=0 ); /* IE6-9 */
+    }
 }
 
 
@@ -87,10 +90,16 @@ $font-bold:     600;
 .custom-btn{
     height: 4.6rem;
     background: $dark-blue-btn;
+    box-shadow: none;
     @include border-radius(2px);
 }
 .theme-btn{
     background: $theme-color;
+    box-shadow: none;
+}
+.theme-btn-outline{
+    border-color: $theme-color;
+    color: $theme-color;
 }
 
 
@@ -160,6 +169,22 @@ ion-img{
 
 .scroll-content{
     background: $body-bg;
+}
+
+.success-check{
+    height: 125px;
+    width: 125px;
+    margin: 0 auto;
+    text-align: center;
+    background: #15db95;
+    color: #FFF;
+    font-size: 40px;
+    @include border-radius(50%);
+    line-height: 135px;
+}
+
+.absolute{
+    position: absolute;
 }
   
 /* =====================
