@@ -12,6 +12,7 @@ import { ResetsuccessPage } from '../pages/resetsuccess/resetsuccess';
 import { DatasubmitPage } from '../pages/datasubmit/datasubmit';
 import { CreateelementPage } from '../pages/createelement/createelement';
 import { ProjectsPage } from '../pages/projects/projects';
+import { LocationsPage } from '../pages/locations/locations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProjectsPage } from '../pages/projects/projects';
     ResetsuccessPage,
     DatasubmitPage,
     CreateelementPage,
-    ProjectsPage
+    ProjectsPage,
+    LocationsPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { ProjectsPage } from '../pages/projects/projects';
     ResetsuccessPage,
     DatasubmitPage,
     CreateelementPage,
-    ProjectsPage
+    ProjectsPage,
+    LocationsPage
   ],
   providers: [
     StatusBar,

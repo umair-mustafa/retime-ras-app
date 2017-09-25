@@ -7,7 +7,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { LoginPage } from '../pages/login/login';                           // Login Page                 Page 02
 // import { ResetpassPage } from '../pages/resetpass/resetpass';               // Password Reset             Page 05
 // import { ResetsuccessPage } from '../pages/resetsuccess/resetsuccess';      // Password Reset Successfull Page 06
-import { ProjectsPage } from '../pages/projects/projects';                 // Create Element             Page 08
+// import { ProjectsPage } from '../pages/projects/projects';                  // Projects                   Page 08
+import { LocationsPage } from '../pages/locations/locations';                  // Locations             Page 09
 // import { DatasubmitPage } from '../pages/datasubmit/datasubmit';            // Data Submission            Page 27
 // import { CreateelementPage } from '../pages/createelement/createelement';   // Create Element             Page 33
 
@@ -16,7 +17,7 @@ import { ProjectsPage } from '../pages/projects/projects';                 // Cr
 })
 export class MyApp {
  
-  rootPage:any = ProjectsPage;
+  rootPage:any = LocationsPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
