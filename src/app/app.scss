@@ -172,6 +172,21 @@ ion-img{
         text-align: center;
     }
 
+    .header-img-btn{
+        border: 2px solid #fff;
+        @include border-radius(50%);
+        overflow: hidden;
+        width: 34px;
+        height: 34px;
+
+        img{
+            height: 30px;
+            width: 30px;
+            display: block;
+            @include border-radius(50%);
+        }
+    }
+
     .sub-header{
         min-height: 40px;
         
