@@ -45,7 +45,13 @@ $font-bold:     600;
        -moz-border-radius: $radius;
         -ms-border-radius: $radius;
             border-radius: $radius;
-  }
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+        -ms-box-shadow: $shadow;
+            box-shadow: $shadow;
+}
 
 
 /* =====================
@@ -165,6 +171,16 @@ ion-img{
         color: #ffffff;
         text-align: center;
     }
+
+    .sub-header{
+        min-height: 40px;
+        
+        .toolbar-background{
+            background: $body-bg;
+            color: #000;
+            font-size: 15px;
+        }
+    }
 }
 
 .scroll-content{
@@ -185,6 +201,43 @@ ion-img{
 
 .absolute{
     position: absolute;
+}
+
+.white-bg{
+
+    .scroll-content{
+        background: #FFF;
+    }
+}
+
+.avatar-list{
+
+    .item{
+        margin-bottom: 15px;
+        @include box-shadow(0px 0px 2px 1px rgba(0, 0, 0, 0.025));
+        @include border-radius(2px);
+        border: 1px solid #f1f1f1;
+
+        h2{
+            font-size: 1.4rem;
+            font-weight: $font-medium;
+            margin-top: 2px;
+        }
+
+        p{
+            font-size: 1.2rem;
+            color: $extra-light-grey;
+        }
+
+        ion-avatar {
+            border: 2px solid #e4e4e4;
+            border-radius: 50%;
+        }
+
+        .item-inner{
+            border: 0;
+        }
+    }
 }
   
 /* =====================

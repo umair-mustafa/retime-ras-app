@@ -3,12 +3,20 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
+// import { HomePage } from '../pages/home/home';                              // Spalsh Screen              Page 01
+// import { LoginPage } from '../pages/login/login';                           // Login Page                 Page 02
+// import { ResetpassPage } from '../pages/resetpass/resetpass';               // Password Reset             Page 05
+// import { ResetsuccessPage } from '../pages/resetsuccess/resetsuccess';      // Password Reset Successfull Page 06
+import { ProjectsPage } from '../pages/projects/projects';                 // Create Element             Page 08
+// import { DatasubmitPage } from '../pages/datasubmit/datasubmit';            // Data Submission            Page 27
+// import { CreateelementPage } from '../pages/createelement/createelement';   // Create Element             Page 33
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+ 
+  rootPage:any = ProjectsPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
