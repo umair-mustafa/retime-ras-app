@@ -9,10 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { ResetpassPage } from '../pages/resetpass/resetpass';
 import { ResetsuccessPage } from '../pages/resetsuccess/resetsuccess';
-import { DatasubmitPage } from '../pages/datasubmit/datasubmit';
-import { CreateelementPage } from '../pages/createelement/createelement';
 import { ProjectsPage } from '../pages/projects/projects';
 import { LocationsPage } from '../pages/locations/locations';
+import { LocationdetailsPage } from '../pages/locationdetails/locationdetails';
+import { DatasubmitPage } from '../pages/datasubmit/datasubmit';
+import { CreateelementPage } from '../pages/createelement/createelement';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LocationsPage } from '../pages/locations/locations';
     DatasubmitPage,
     CreateelementPage,
     ProjectsPage,
-    LocationsPage
+    LocationsPage,
+    LocationdetailsPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { LocationsPage } from '../pages/locations/locations';
     DatasubmitPage,
     CreateelementPage,
     ProjectsPage,
-    LocationsPage
+    LocationsPage,
+    LocationdetailsPage
   ],
   providers: [
     StatusBar,

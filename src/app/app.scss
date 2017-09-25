@@ -271,6 +271,60 @@ ion-img{
         border-bottom: 1px solid #f1f1f1;
     }
 }
+
+.iconed{
+
+    ion-avatar {
+        border: 0 !important;
+        padding-top: 8.5px;
+        background: #fbfbfb;
+        color: $extra-light-grey;
+        text-align: center;
+    }
+}
+
+.location-info{
+    padding: 30px 15px;
+    border-bottom: 2px solid #f1f1f1;
+
+    .location-image{
+        height: 100px;
+        width: 100px;
+        border: 2px solid #f1f1f1;
+        @include border-radius(50%);
+        overflow: hidden;
+        display: inline-block;
+
+        img{
+            height: 100px;
+            width: 100px;
+            display: block;
+        }
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+        color: $extra-light-grey;
+        margin-bottom: 0;
+    }
+}
+
+.accordion-expandable{
+    padding: 0 15px 0 60px;
+    background: #fdfdfd;
+    border-bottom: 1px solid #f1f1f1;
+    color: #717171;
+}
+
+.drop-caret{
+    position: absolute;
+    right: 15px;
+    top: 18px;
+}
   
 /* =====================
    CSS Helpers
@@ -307,6 +361,9 @@ ion-img{
     margin-bottom:5*1rem !important;
 }
 
+.no-radius{
+    @include border-radius(0);
+}
 
 /* =====================
    Placeholders
