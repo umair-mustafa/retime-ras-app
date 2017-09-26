@@ -10,7 +10,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { ProjectsPage } from '../pages/projects/projects';                       // Projects                   Page 08
 // import { LocationsPage } from '../pages/locations/locations';                    // Locations                  Page 09
 // import { LocationdetailsPage } from '../pages/locationdetails/locationdetails';  // Locations                  Page 10 , 11
- import { SelectrolePage } from '../pages/selectrole/selectrole';  // Select Role                  Page 12
+// import { SelectrolePage } from '../pages/selectrole/selectrole';                 // Select Role                Page 12
+ import { SelectareaPage } from '../pages/selectarea/selectarea';                 // Select Role                Page 13
 // import { DatasubmitPage } from '../pages/datasubmit/datasubmit';                 // Data Submission            Page 27
 // import { CreateelementPage } from '../pages/createelement/createelement';        // Create Element             Page 33
 
@@ -19,7 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class MyApp {
  
-  rootPage:any = SelectrolePage;
+  rootPage:any = SelectareaPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

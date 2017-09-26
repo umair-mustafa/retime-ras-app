@@ -13,6 +13,7 @@ import { ProjectsPage } from '../pages/projects/projects';
 import { LocationsPage } from '../pages/locations/locations';
 import { LocationdetailsPage } from '../pages/locationdetails/locationdetails';
 import { SelectrolePage } from '../pages/selectrole/selectrole';
+import { SelectareaPage } from '../pages/selectarea/selectarea';
 import { DatasubmitPage } from '../pages/datasubmit/datasubmit';
 import { CreateelementPage } from '../pages/createelement/createelement';
 
@@ -27,6 +28,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     LocationsPage,
     LocationdetailsPage,
     SelectrolePage,
+    SelectareaPage,
     DatasubmitPage,
     CreateelementPage
   ],
@@ -45,6 +47,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     LocationsPage,
     LocationdetailsPage,
     SelectrolePage,
+    SelectareaPage,
     DatasubmitPage,
     CreateelementPage
   ],
