@@ -12,6 +12,7 @@ import { ResetsuccessPage } from '../pages/resetsuccess/resetsuccess';
 import { ProjectsPage } from '../pages/projects/projects';
 import { LocationsPage } from '../pages/locations/locations';
 import { LocationdetailsPage } from '../pages/locationdetails/locationdetails';
+import { SelectrolePage } from '../pages/selectrole/selectrole';
 import { DatasubmitPage } from '../pages/datasubmit/datasubmit';
 import { CreateelementPage } from '../pages/createelement/createelement';
 
@@ -22,11 +23,12 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     LoginPage,
     ResetpassPage,
     ResetsuccessPage,
-    DatasubmitPage,
-    CreateelementPage,
     ProjectsPage,
     LocationsPage,
-    LocationdetailsPage
+    LocationdetailsPage,
+    SelectrolePage,
+    DatasubmitPage,
+    CreateelementPage
   ],
   imports: [
     BrowserModule,
@@ -39,11 +41,12 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     LoginPage,
     ResetpassPage,
     ResetsuccessPage,
-    DatasubmitPage,
-    CreateelementPage,
     ProjectsPage,
     LocationsPage,
-    LocationdetailsPage
+    LocationdetailsPage,
+    SelectrolePage,
+    DatasubmitPage,
+    CreateelementPage
   ],
   providers: [
     StatusBar,
