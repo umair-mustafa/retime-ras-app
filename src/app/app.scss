@@ -262,7 +262,15 @@ ion-img{
         }
     }
 }
+
+.minimal, .iconed, .numbered{
+    .item p{
+        color: #666;
+    }
+}
+
 .minimal{
+
     .item{
         margin: 0;
         @include box-shadow(none);
@@ -297,6 +305,25 @@ ion-img{
         p{
             color: #666;
             font-weight: $font-medium;
+        }
+    }
+}
+
+.numbered{
+
+    ion-item{
+        border-left: 3px solid #8860d0 !important;
+    }
+    
+    ion-avatar{
+        min-height: 30px;
+        min-width: 30px;
+        background: #9c9c9c;
+        padding-top: 7px;
+        
+        span{
+            color: #FFF;
+            font-size: 12px;
         }
     }
 }
@@ -387,6 +414,19 @@ ion-img{
     font-family: "Ionicons";
     line-height: 28px;
     @include border-radius(50%);
+}
+
+.numbered{
+
+    .list-checked{
+        ion-avatar{
+            background: #FFF;
+
+            span{
+                color: #666;
+            }
+        }
+    }
 }
   
 /* =====================

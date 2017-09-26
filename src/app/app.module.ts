@@ -14,6 +14,7 @@ import { LocationsPage } from '../pages/locations/locations';
 import { LocationdetailsPage } from '../pages/locationdetails/locationdetails';
 import { SelectrolePage } from '../pages/selectrole/selectrole';
 import { SelectareaPage } from '../pages/selectarea/selectarea';
+import { SelectelementPage } from '../pages/selectelement/selectelement'; 
 import { DatasubmitPage } from '../pages/datasubmit/datasubmit';
 import { CreateelementPage } from '../pages/createelement/createelement';
 
@@ -29,6 +30,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     LocationdetailsPage,
     SelectrolePage,
     SelectareaPage,
+    SelectelementPage,
     DatasubmitPage,
     CreateelementPage
   ],
@@ -48,6 +50,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     LocationdetailsPage,
     SelectrolePage,
     SelectareaPage,
+    SelectelementPage,
     DatasubmitPage,
     CreateelementPage
   ],
