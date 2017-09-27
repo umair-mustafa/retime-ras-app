@@ -12,6 +12,7 @@ import { ResetsuccessPage } from '../pages/resetsuccess/resetsuccess';
 import { ProjectsPage } from '../pages/projects/projects';
 import { LocationsPage } from '../pages/locations/locations';
 import { LocationdetailsPage } from '../pages/locationdetails/locationdetails';
+import { CreateStudyPage } from '../pages/create-study/create-study';
 import { SelectrolePage } from '../pages/selectrole/selectrole';
 import { SelectareaPage } from '../pages/selectarea/selectarea';
 import { SelectelementPage } from '../pages/selectelement/selectelement'; 
@@ -28,6 +29,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     ProjectsPage,
     LocationsPage,
     LocationdetailsPage,
+    CreateStudyPage,
     SelectrolePage,
     SelectareaPage,
     SelectelementPage,
@@ -48,6 +50,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     ProjectsPage,
     LocationsPage,
     LocationdetailsPage,
+    CreateStudyPage,
     SelectrolePage,
     SelectareaPage,
     SelectelementPage,
