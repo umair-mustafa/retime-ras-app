@@ -26,7 +26,7 @@
 
 $skyblue:           #5bc0f5;
 $lightblue:         #216ff3;
-$dark-blue-btn:     #2d4159;
+$dark-blue:         #2d4159;
 $theme-color:       #42a5f5;
 $extra-light-grey:  #b3b3b3;
 $body-bg:           #fafafa;
@@ -99,7 +99,7 @@ $font-bold:     600;
 
 .custom-btn{
     height: 4.6rem;
-    background: $dark-blue-btn;
+    background: $dark-blue;
     box-shadow: none;
     @include border-radius(2px);
 }
@@ -395,7 +395,7 @@ ion-img{
 }
 
 .list-checked{
-    background: #2d4159;
+    background: $dark-blue;
 
     ion-avatar{
         color: #FFF;
@@ -442,6 +442,39 @@ ion-img{
     text-align: center;
     padding: 4px;
     font-size: 11px;
+}
+
+.grid-border{
+
+    ion-row{
+
+        ion-col{
+            
+
+            div{
+                text-align: center;
+                padding: 35px 0;
+                font-size: 18px;
+                border: 1px solid #e0e0e0;
+                border-top: 0;
+                color: #666;
+            }
+
+            div.active{
+                background: $dark-blue;
+                color: #FFF;
+            }
+        }
+
+        ion-col:nth-child(2n + 2) div{
+            border-left: 0;
+            border-right: 0;
+        }
+
+        ion-col:nth-child(4n + 1) div{
+            border-left: 0;
+        }
+    }
 }
   
 /* =====================
