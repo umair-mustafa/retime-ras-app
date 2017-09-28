@@ -16,7 +16,9 @@ import { CreateStudyPage } from '../pages/create-study/create-study';
 import { SelectrolePage } from '../pages/selectrole/selectrole';
 import { SelectareaPage } from '../pages/selectarea/selectarea';
 import { SelectelementPage } from '../pages/selectelement/selectelement'; 
-import { EnterRatingPage } from '../pages/enter-rating/enter-rating'; 
+import { EnterRatingPage } from '../pages/enter-rating/enter-rating';
+import { ApplyRatingPage } from '../pages/apply-rating/apply-rating';
+import { AddFrequencyPage } from '../pages/add-frequency/add-frequency';
 import { DatasubmitPage } from '../pages/datasubmit/datasubmit';
 import { CreateelementPage } from '../pages/createelement/createelement';
 
@@ -35,6 +37,8 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     SelectareaPage,
     SelectelementPage,
     EnterRatingPage,
+    ApplyRatingPage,
+    AddFrequencyPage,
     DatasubmitPage,
     CreateelementPage
   ],
@@ -57,6 +61,8 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     SelectareaPage,
     SelectelementPage,
     EnterRatingPage,
+    ApplyRatingPage,
+    AddFrequencyPage,
     DatasubmitPage,
     CreateelementPage
   ],

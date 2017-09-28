@@ -444,7 +444,8 @@ ion-img{
     font-size: 11px;
 }
 
-.grid-border{
+.grid-border-col-4{
+    background: #f9f9f9;
 
     ion-row{
 
@@ -475,6 +476,43 @@ ion-img{
             border-left: 0;
         }
     }
+}
+.grid-border-col-3{
+    background: #f9f9f9;
+
+    ion-row{
+
+        ion-col{
+            
+
+            div{
+                text-align: center;
+                padding: 40px 0;
+                font-size: 18px;
+                border: 1px solid #e0e0e0;
+                border-top: 0;
+                color: #666;
+            }
+        }
+
+        ion-col:nth-child(3n + 2) div{
+            border-left: 0;
+            border-right: 0;
+        }
+
+        ion-col:nth-child(3n + 1) div{
+            border-left: 0;
+        }
+
+        ion-col:nth-child(3n + 3) div{
+            border-right: 0;
+        }
+    }
+}
+
+.big-input{
+    font-size: 32px;
+    padding: 10px 0;
 }
   
 /* =====================

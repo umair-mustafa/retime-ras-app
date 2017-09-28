@@ -14,7 +14,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { SelectrolePage } from '../pages/selectrole/selectrole';                 // Select Role                Page 12
 // import { SelectareaPage } from '../pages/selectarea/selectarea';                 // Select Role                Page 13
 // import { SelectelementPage } from '../pages/selectelement/selectelement';        // Select Element             Page 14
- import { EnterRatingPage } from '../pages/enter-rating/enter-rating';        // Enter Rating               Page 15
+// import { EnterRatingPage } from '../pages/enter-rating/enter-rating';            // Enter Rating               Page 15
+// import { ApplyRatingPage } from '../pages/apply-rating/apply-rating';            // Apply Rating               Page 16
+ import { AddFrequencyPage } from '../pages/add-frequency/add-frequency';            // Apply Rating               Page 17
 // import { DatasubmitPage } from '../pages/datasubmit/datasubmit';                 // Data Submission            Page 27
 // import { CreateelementPage } from '../pages/createelement/createelement';        // Create Element             Page 33
 
@@ -23,7 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class MyApp {
  
-  rootPage:any = EnterRatingPage;
+  rootPage:any = AddFrequencyPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
