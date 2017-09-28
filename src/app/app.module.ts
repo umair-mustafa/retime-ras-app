@@ -20,6 +20,7 @@ import { EnterRatingPage } from '../pages/enter-rating/enter-rating';
 import { ApplyRatingPage } from '../pages/apply-rating/apply-rating';
 import { AddFrequencyPage } from '../pages/add-frequency/add-frequency';
 import { StudyOptionsPage } from '../pages/study-options/study-options';
+import { AddNotesPage } from '../pages/add-notes/add-notes';  
 import { DatasubmitPage } from '../pages/datasubmit/datasubmit';
 import { CreateelementPage } from '../pages/createelement/createelement';
 
@@ -41,6 +42,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     ApplyRatingPage,
     AddFrequencyPage,
     StudyOptionsPage,
+    AddNotesPage,
     DatasubmitPage,
     CreateelementPage
   ],
@@ -66,6 +68,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     ApplyRatingPage,
     AddFrequencyPage,
     StudyOptionsPage,
+    AddNotesPage,
     DatasubmitPage,
     CreateelementPage
   ],
