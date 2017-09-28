@@ -392,6 +392,14 @@ ion-img{
         background: #FFF;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
+
+    .danger{
+        background: red;
+    }
+}
+
+.small-text{
+    font-size: 11px;
 }
 
 .list-checked{

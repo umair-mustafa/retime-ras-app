@@ -18,7 +18,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { ApplyRatingPage } from '../pages/apply-rating/apply-rating';            // Apply Rating               Page 16
 // import { AddFrequencyPage } from '../pages/add-frequency/add-frequency';         // Apply Rating               Page 17
 // import { StudyOptionsPage } from '../pages/study-options/study-options';         // Study Options              Page 18
-import { AddNotesPage } from '../pages/add-notes/add-notes';                      // Add Notes                  Page 19
+// import { AddNotesPage } from '../pages/add-notes/add-notes';                     // Add Notes                  Page 19
+ import { AddPhotoPage } from '../pages/add-photo/add-photo';                     // Add Notes                  Page 20 
 // import { DatasubmitPage } from '../pages/datasubmit/datasubmit';                 // Data Submission            Page 27
 // import { CreateelementPage } from '../pages/createelement/createelement';        // Create Element             Page 33
 
@@ -27,7 +28,7 @@ import { AddNotesPage } from '../pages/add-notes/add-notes';                    
 })
 export class MyApp {
  
-  rootPage:any = AddNotesPage;
+  rootPage:any = AddPhotoPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
