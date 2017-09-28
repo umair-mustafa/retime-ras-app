@@ -514,6 +514,16 @@ ion-img{
     font-size: 32px;
     padding: 10px 0;
 }
+
+.options-list{
+
+    ion-item{
+
+        .item-inner{
+            border-bottom: 0 !important;
+        }
+    }
+}
   
 /* =====================
    CSS Helpers
@@ -571,7 +581,7 @@ ion-img{
     color: #EEEEEE;
 }
 .transparent-input input:-ms-input-placeholder { /* IE 10+ */
-color: #EEEEEE;
+    color: #EEEEEE;
 }
 .transparent-input input:-moz-placeholder { /* Firefox 18- */
     color: #EEEEEE;
