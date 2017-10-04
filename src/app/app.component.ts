@@ -19,7 +19,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { AddFrequencyPage } from '../pages/add-frequency/add-frequency';         // Apply Rating               Page 17
 // import { StudyOptionsPage } from '../pages/study-options/study-options';         // Study Options              Page 18
 // import { AddNotesPage } from '../pages/add-notes/add-notes';                     // Add Notes                  Page 19
- import { AddPhotoPage } from '../pages/add-photo/add-photo';                     // Add Notes                  Page 20 
+// import { AddPhotoPage } from '../pages/add-photo/add-photo';                     // Add Notes                  Page 20, 21 
+// import { RoundSummaryPage } from '../pages/round-summary/round-summary';         // Round Summary              Page 22 
+// import { ObservationPage } from '../pages/observation/observation';              // Observation Summary        Page 23
+ import { RasDataPage } from '../pages/ras-data/ras-data';         // Observation Summary        Page 24
 // import { DatasubmitPage } from '../pages/datasubmit/datasubmit';                 // Data Submission            Page 27
 // import { CreateelementPage } from '../pages/createelement/createelement';        // Create Element             Page 33
 
@@ -28,7 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class MyApp {
  
-  rootPage:any = AddPhotoPage;
+  rootPage:any = RasDataPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

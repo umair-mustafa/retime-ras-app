@@ -226,6 +226,14 @@ ion-img{
     line-height: 135px;
 }
 
+.upload-image{
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    @include border-radius(50%);
+    overflow: hidden;
+}
+
 .absolute{
     position: absolute;
 }
@@ -538,6 +546,86 @@ ion-img{
         min-height: 150px;
     }
 }
+
+.nav-back{
+    top: 6px;
+    border: 0;
+    color: #FFF;
+    font-size: 18px;
+    position: absolute;
+    z-index: 999;
+}
+
+.number-icon{
+    background: #888888;
+    color: #FFF;
+    display: inline-block;
+    height: 25px;
+    min-width: 25px;
+    padding: 7px;
+    @include border-radius(50%);
+    text-align: center;
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+.full-card{
+    width: 100%;
+    position: relative;
+}
+
+.overlayed {
+    position: absolute;
+    bottom: 20px;
+    color: #FFF;
+    left: 10px;
+    font-size: 18px;
+    padding-left: 50px;
+
+    span{
+        background: $theme-color;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        text-align: center;
+        margin-right: 15px;
+        @include border-radius(50%);
+        vertical-align: middle;
+        line-height: 31px;
+        font-size: 14px;
+        position: absolute;
+        left: 5px;
+        bottom: -3px;
+    }
+}
+
+ion-modal.inset-modal {
+    // transparent black background overlay
+    background-color: rgba(0, 0, 0, .5) !important;
+    transition: opacity .25s ease-in-out;
+    padding: 22vh 10vw;
+
+    ion-content{
+        @include border-radius(3px);
+    }
+
+    ion-header{
+        @include border-radius( 3px 3px 0 0);
+        overflow: hidden;
+    }
+
+    ion-footer{
+        @include border-radius( 0 0 3px 3px);
+    }
+}
+
+.warning-icon{
+    width: 60px;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px auto;
+    color: #F77E1C;
+}
   
 /* =====================
    CSS Helpers
@@ -582,6 +670,64 @@ ion-img{
 
 .no-radius{
     @include border-radius(0);
+}
+
+/* =====================
+   Tables
+   ===================== */
+
+table.table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+    font-size: 13px;
+
+    thead, tbody{
+
+        tr{
+
+            th{
+                font-weight: $font-regular;
+                text-align: left;
+                padding: 10px 20px;
+                background: #f3f3f3;
+                border-top: 1px solid #eaeaea;
+                border-bottom: 1px solid #eaeaea;
+                color: #717171;
+                vertical-align: middle;
+            }
+
+            td{
+                text-align: left;
+                padding: 10px 20px;
+                vertical-align: middle;
+                border-bottom: 1px solid #eaeaea;
+
+                .number-icon{
+                    background: #FFF;
+                    color: $dark-blue;
+                }
+            }
+        }
+
+        tr.active td{
+            background: $dark-blue;
+            color: #FFF;
+
+            .checkbox-icon{
+                border-color: #e0e0e0;
+            }
+
+            .checkbox-checked{
+                border-color: #FFF;
+                background: #FFF;
+
+                .checkbox-inner{
+                    border-color: $dark-blue;
+                }
+            }
+        }
+    }
 }
 
 /* =====================
