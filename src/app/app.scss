@@ -557,8 +557,8 @@ ion-img{
 }
 
 .number-icon{
-    background: #888888;
-    color: #FFF;
+    background: #888888 !important;
+    color: #FFF !important;
     display: inline-block;
     height: 25px;
     min-width: 25px;
@@ -713,6 +713,11 @@ table.table{
         tr.active td{
             background: $dark-blue;
             color: #FFF;
+
+            .number-icon{
+                background: #FFF !important;
+                color: $dark-blue !important;
+            }
 
             .checkbox-icon{
                 border-color: #e0e0e0;
