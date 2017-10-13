@@ -25,6 +25,7 @@ import { AddPhotoPage } from '../pages/add-photo/add-photo';
 import { RoundSummaryPage } from '../pages/round-summary/round-summary'; 
 import { ObservationPage } from '../pages/observation/observation';
 import { RasDataPage } from '../pages/ras-data/ras-data';
+import { TransferDataPage } from '../pages/transfer-data/transfer-data';
 import { DatasubmitPage } from '../pages/datasubmit/datasubmit';
 import { CreateelementPage } from '../pages/createelement/createelement';
 
@@ -51,6 +52,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     RoundSummaryPage,
     ObservationPage,
     RasDataPage,
+    TransferDataPage,
     DatasubmitPage,
     CreateelementPage
   ],
@@ -81,6 +83,7 @@ import { CreateelementPage } from '../pages/createelement/createelement';
     RoundSummaryPage,
     ObservationPage,
     RasDataPage,
+    TransferDataPage,
     DatasubmitPage,
     CreateelementPage
   ],

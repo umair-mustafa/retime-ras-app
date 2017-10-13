@@ -22,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { AddPhotoPage } from '../pages/add-photo/add-photo';                     // Add Notes                  Page 20, 21 
 // import { RoundSummaryPage } from '../pages/round-summary/round-summary';         // Round Summary              Page 22 
 // import { ObservationPage } from '../pages/observation/observation';              // Observation Summary        Page 23
- import { RasDataPage } from '../pages/ras-data/ras-data';         // Observation Summary        Page 24
+// import { RasDataPage } from '../pages/ras-data/ras-data';                        // Store RAS Data             Page 24
+ import { TransferDataPage } from '../pages/transfer-data/transfer-data';                   // Transferring Data          Page 26
 // import { DatasubmitPage } from '../pages/datasubmit/datasubmit';                 // Data Submission            Page 27
 // import { CreateelementPage } from '../pages/createelement/createelement';        // Create Element             Page 33
 
@@ -31,7 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class MyApp {
  
-  rootPage:any = RasDataPage;
+  rootPage:any = TransferDataPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

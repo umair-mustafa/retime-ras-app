@@ -24,10 +24,10 @@
    Variables
    ===================== */
 
-$skyblue:           #5bc0f5;
-$lightblue:         #216ff3;
-$dark-blue:         #2d4159;
-$theme-color:       #42a5f5;
+$skyblue:           #F5BB00;
+$lightblue:         #F57200;
+$dark-blue:         #8C4007;
+$theme-color:       #FF9800;
 $extra-light-grey:  #b3b3b3;
 $body-bg:           #fafafa;
 
@@ -109,6 +109,10 @@ $font-bold:     600;
 }
 .theme-btn-outline{
     border-color: $theme-color;
+    color: $theme-color;
+}
+
+.button-clear{
     color: $theme-color;
 }
 
@@ -323,8 +327,17 @@ ion-img{
 
 .numbered{
 
-    ion-item{
-        border-left: 3px solid #8860d0 !important;
+    ion-item:nth-child(4n+1){
+        border-left: 3px solid #FF1D25 !important;
+    }
+    ion-item:nth-child(4n+2){
+        border-left: 3px solid #FF931E !important;
+    }
+    ion-item:nth-child(4n+3){
+        border-left: 3px solid #7AC943 !important;
+    }
+    ion-item:nth-child(4n+4){
+        border-left: 3px solid #8860D0 !important;
     }
     
     ion-avatar{
@@ -384,7 +397,7 @@ ion-img{
 }
 
 .header-divider{
-    border-top: 1px solid #59b5ff;
+    border-top: 1px solid $skyblue;
 }
 
 .progress-bar-timer{
@@ -427,7 +440,7 @@ ion-img{
     color: #FFF;
     position: absolute;
     right: 14px;
-    background: #57677a;
+    background: $theme-color;
     height: 28px;
     width: 28px;
     text-align: center;
@@ -449,8 +462,33 @@ ion-img{
     }
 }
 
+.checkbox-md .checkbox-checked{
+    border-color: $theme-color;
+    background: $theme-color;
+}
+
+.range-md-primary .range-bar-active,
+.range-md-primary .range-knob,
+.range-md-primary .range-pin,
+.range-md-primary .range-pin::before,
+.range-md .range-pin::before{
+    background: $theme-color;
+}
+.item-input-has-focus .label-md[stacked],
+.input-has-focus .label-md[stacked],
+.item-input-has-focus .label-md[floating],
+.input-has-focus .label-md[floating]{
+    color: $theme-color;
+}
+.item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{
+    border-bottom-color: $theme-color;
+    -webkit-box-shadow: inset 0 -1px 0 0 $theme-color;
+    box-shadow: inset 0 -1px 0 0 $theme-color;
+}
+
+
 .icon-label ion-label {
-    background: #88b3ff;
+    background: $theme-color;
     height: 20px;
     min-width: 20px;
     @include border-radius(10px);
@@ -626,6 +664,32 @@ ion-modal.inset-modal {
     margin: 20px auto;
     color: #F77E1C;
 }
+
+.t-data{
+
+    p{
+        font-size: 16px;
+        font-weight: $font-medium;
+        margin-bottom: 10px;
+        color: #FFF;
+    }
+    span {
+        color: #FFF;
+        font-size: 12px;
+    }
+}
+
+.progress-data{
+    height: 3px;
+    background: #FFF;
+    max-width: 250px;
+    margin: 50px auto 0;
+
+    .progressed{
+        background: #00D386;
+        height: 3px;
+    }
+}
   
 /* =====================
    CSS Helpers
@@ -740,14 +804,14 @@ table.table{
    ===================== */
 
 .transparent-input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #EEEEEE;
+    color: #ffffff;
 }
 .transparent-input input::-moz-placeholder { /* Firefox 19+ */
-    color: #EEEEEE;
+    color: #ffffff;
 }
 .transparent-input input:-ms-input-placeholder { /* IE 10+ */
-    color: #EEEEEE;
+    color: #ffffff;
 }
 .transparent-input input:-moz-placeholder { /* Firefox 18- */
-    color: #EEEEEE;
+    color: #ffffff;
 }
